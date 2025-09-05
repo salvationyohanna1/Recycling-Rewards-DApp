@@ -1,0 +1,37 @@
+[project]
+name = 'Recycling-Rewards-DApp'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Recycling-Rewards-DApp]
+path = 'contracts/Recycling-Rewards-DApp.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.Recycling-Challenges]
+path = 'contracts/Recycling-Challenges.clar'
+clarity_version = 3
+epoch = 3.1
+[contracts.impact-tracker]
+path = 'contracts/impact-tracker.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.carbon-credits]
+path = 'contracts/carbon-credits.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
